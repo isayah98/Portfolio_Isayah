@@ -117,7 +117,35 @@ span .bx-menu{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 430px){
+.bur-menu{
+    background-color: chocolate;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+.bur-menu ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    transition: transorm 0.3s ease;
+}
+.bur-menu ul li a{
+    text-decoration: none;
+    color: bisque;
+}
+.bur-menu ul li:hover{
+    transform: scale(1.4);
+}
+.bur-menu ul li a:hover{
+    text-decoration: underline
+}
+.bx-x{
+    right: -100px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 539px){
     .nav-links{
         display: none;
     }
