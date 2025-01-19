@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 :root {
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Lora', serif;
@@ -30,6 +31,7 @@ header{
 .nav-links li a{
     text-decoration: none;
     color: whitesmoke;
+    font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav-links li a:hover{
     background-color: bisque;
@@ -64,6 +66,8 @@ span .bx-menu{
 .content p{
     color: whitesmoke;
     font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 .hero-buttons{
     background-color: brown;
@@ -86,6 +90,9 @@ span .bx-menu{
 
 #aboutme .me{
     padding:30px 30px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
 }
 .about-links{
     display: flex;
@@ -143,6 +150,36 @@ span .bx-menu{
     right: -100px;
     font-size: 30px;
     color: white;
+    cursor: pointer;
+}
+.my-projects h1{
+    text-align: center;
+}
+.row-1{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+.card{
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+
+}
+
+footer{
+    text-align: center;
+    background-color: #216cc2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bx-link-external{
+    font-size: 30px;
     cursor: pointer;
 }
 @media screen and (max-width: 539px){
