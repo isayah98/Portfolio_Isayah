@@ -17,6 +17,11 @@ header{
     padding: 20px;
     background-color: rgb(25, 81, 133);
 }
+h2 a{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+}
 .navbar{
     width: 100%;
     display: flex;
@@ -38,6 +43,9 @@ header{
     color: rgb(25, 81, 133);
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
+}
+.nav-links li a:visited{
+ text-decoration: underline;
 }
 .nav-links {
     display: flex;
@@ -104,18 +112,19 @@ span .bx-menu{
     font-weight: bolder;
     cursor: pointer;
     position: relative;
-    border: 2px solid black;
+    border: none;
+    background: #6ab4f1;
     padding: 10px 10px;
     border-radius: 10px;
 }
 .about-links li:hover{
     background-color: coral;
-    padding: 10px 10px;
-    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 .about-wrapper{
     padding: 50px;
-    border: 3px solid #216cc2;
+    border: 1px solid #216cc2;
     margin: 30px 30px;
     border-radius: 20px;
 }
@@ -151,6 +160,8 @@ span .bx-menu{
     font-size: 30px;
     color: white;
     cursor: pointer;
+    display: flex;
+    float: right;
 }
 #my-projects h1{
     text-align: center;
@@ -169,7 +180,16 @@ span .bx-menu{
     padding: 20px;
     border: none;
     border-radius: 15px;
-
+    color:#fff;
+    font-weight: bold;
+}
+.card:hover{
+    border: 3px solid #081b70;
+    transition: 0.3s ease-in-out;
+}
+.card h3{
+    text-decoration: underline;
+    color: #0b4281;
 }
 
 footer{
@@ -181,6 +201,15 @@ footer{
 .bx-link-external{
     font-size: 30px;
     cursor: pointer;
+}
+#contact{
+    padding: 20px;
+}
+#contact h1{
+    text-align: center;
+}
+#contact .bx{
+    font-size: 25px;
 }
 @media screen and (max-width: 539px){
     .nav-links{
@@ -197,5 +226,19 @@ footer{
     }
     .my-image img{
         height: 200px;
+    }
+    .card span{
+        font-size: 15px;
+    }
+    .card:hover{
+        border: 3px solid #081b70;
+    }
+    .row-1{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
     }
 }

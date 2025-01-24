@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#aboutme">About Me</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">Projects</a></li>
+                <li><a href="#my-projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -38,8 +38,8 @@
             <h1>Hi, I`m Isayah Tsela</h1>
             
             <p class="tagline">I am a Web Developer who creates morden and resposive websites.<br/>I also do web hosting for clients</p>
-            <button type="button" class="hero-buttons">View My Porjects</button>
-            <button type="button" class="hero-buttons">Contact Me</button>
+            <button type="button" class="hero-buttons" onclick="window.location.href='#my-projects'">View My Porjects</button>
+            <button type="button" class="hero-buttons" onclick="window.location.href='#contact'">Contact Me</button>
         </div>
     
         <div class="my-image">
@@ -51,6 +51,7 @@
     <div id="aboutme">
         <h1>ABOUT ME</h1>
         <p class="me">I am a passionate web developer with a strong foundation in designing and building user-friendly, responsive websites. <br/>I specialize in front-end and back-end development, turning ideas into functional, visually appealing digital experiences. <br/>With a keen eye for detail and a commitment to clean, efficient code, I continuously strive to improve my skills and deliver exceptional results.</p><br/>
+        <hr style="width: 1000px;"></hr><br/>
         <ul class="about-links">
             <li class="links">Skills</li>
             <li class="links">Exprience</li>
@@ -91,6 +92,7 @@
 
     <div id="my-projects">
         <h1>PROJECTS</h1>
+        <hr width="500px">
         <div class="row-1">
             <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25) ), url('./myImages/calculator-385506_1280.jpg');">
                 <h3>Calculator</h3>
@@ -108,7 +110,7 @@
                 <p>check website</p></span><i class='bx bx-link-external' onclick="window.open('https://isayah98.github.io/myPortfolio/', '_blank')"></i>
             </div>
 
-            <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25) ), url('./myImages/Screenshot from 2024-12-17 20-28-22.png');">
+            <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25) ), url('./myImages/360_F_235292457_As8nGLCTVbxVxU1zLeGnrIxb2fWGDuME.jpg');">
                 <h3>BuntuHost Business Website</h3>
                 <span>A fully responsive business website for BuntuHost,<br/> a hosting services provider. The site showcases the company's<br/> offerings, including hosting plans, UI/UX design services, <br/>and customer support. Built using modern web technologies, it features a clean layout,<br/> intuitive navigation, and integrated contact forms for seamless user interaction.</span>
                 <br/>
@@ -116,18 +118,20 @@
                 <p>check website</p></span><i class='bx bx-link-external' onclick="window.open('https://isayah98.github.io/Buntuhostweb/', '_blank')"></i>
             </div>
         </div>
-    </div>
+    </div><br/>
 
     <div id="contact">
         <h1>Contact me</h1>
-        <p>Contact No: 0659982132</p>
-        <p>Email: isayatsela@gmail.com</p>
+        <hr width="500">
+        <i class='bx bxs-phone'><a href="tel:0659982132" style="text-decoration: none; color: brown;"> : 0659982132</a></i><br/>
+        
+        <i class='bx bxs-envelope' style="margin-top: 10px;"><a href="mailto:isayatsela@gmail.com" style="text-decoration: none;"> : isayatsela@gmail.com</a></i>
 
     </div>
 
    </section>
    <footer>
-    <span id="foot">& Portfolio. All rigts reseverd.</span>
+    <p>&copy; 2025 All rights reserved</p>
    </footer>
 </body>
 <script src="scripts.js"></script>
