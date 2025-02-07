@@ -5,22 +5,40 @@
     --accent-font: 'Poppins', sans-serif;
 }
 
-body{
+*{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
 header{
     width: 100%;
-    padding: 20px;
-    background-color: rgb(25, 81, 133);
 }
-h2 a{
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 20px;
+.header-container{
+    position: relative; 
+    background: linear-gradient(blue, aqua);
+    height: 700px;
+    padding-top: 30px;
+}
+.custom-shape-divider-bottom-1738951759 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1738951759 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 260px;
+}
+
+.custom-shape-divider-bottom-1738951759 .shape-fill {
+    fill: #FFFFFF;
 }
 .navbar{
     width: 100%;
@@ -32,20 +50,19 @@ h2 a{
 }
 .nav-links li{
     list-style: none;
+    background: white;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
 }
 .nav-links li a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #216cc2;
     font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
-.nav-links li a:hover{
-    background-color: bisque;
-    color: rgb(25, 81, 133);
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-}
-.nav-links li a:visited{
- text-decoration: underline;
+.nav-links li:hover, .nav-links li a:hover{
+    background-color: #919191;
+    color: white;
 }
 .nav-links {
     display: flex;
@@ -66,16 +83,20 @@ span .bx-menu{
 }
 .content{
     align-content: center;
+    margin-bottom: 70px;
 }
 .content h1{
     font-family: var(--accent-font);
     color: rgb(29, 204, 195);
+    font-size: 45px;
+    margin-bottom: 15px;
 }
 .content p{
     color: whitesmoke;
     font-weight: 200;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    margin-bottom: 15px;
 }
 .hero-buttons{
     background-color: brown;
@@ -85,22 +106,45 @@ span .bx-menu{
     margin-top: 10px;
     border-radius: 15px;
     border: none;
+    font-weight: bold;
 }
 .my-image img{
-    height: 400px;
+    height: 600px;
 }
 #aboutme{
     text-align: center;
+    margin-top: 30px;
 }
 #aboutme h1{
+    font-size: 30px;
     font-weight: 1000;
+    font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #008abc;
+}
+#aboutme .me::before{
+    content: '';
+    width: 2px;
+    height: 70px;
+    background-color: rgb(37, 85, 255);
+    position: absolute;
+    left: 260px;
 }
 
 #aboutme .me{
     padding:30px 30px ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    position: relative;
 
+}
+#aboutme .me::after{
+    content: '';
+    width: 3px;
+    height: 70px;
+    background-color: rgb(37, 85, 255);
+    position: absolute;
+    right: 260px;
+    top: 30px;
 }
 .about-links{
     display: flex;
@@ -113,28 +157,48 @@ span .bx-menu{
     cursor: pointer;
     position: relative;
     border: none;
-    background: #6ab4f1;
-    padding: 10px 10px;
-    border-radius: 10px;
+    background: linear-gradient(aqua, blue);
+    padding: 10px 15px 10px 15px;
+    color: white;
+    border-radius: 20px;
 }
 .about-links li:hover{
-    background-color: coral;
-    color: #fff;
-    transition: 0.3s ease-in-out;
+    background: linear-gradient(blue, aqua);
+    transition: 0.5s ease-in-out;
+}
+.wrapper-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-wrapper{
     padding: 50px;
-    border: 1px solid #216cc2;
+    border: 3px solid #000000;
     margin: 30px 30px;
     border-radius: 20px;
+    width: fit-content;
+    text-align: center;
 }
 .about-wrapper h5{
-    color: brown;
+    color: rgb(52, 226, 217);
     text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about-wrapper ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.about-wrapper ul li p{
+    color: white;
+    font-weight: bold;
 }
 
 .bur-menu{
-    background-color: chocolate;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 20px;
     display: none;
@@ -160,36 +224,46 @@ span .bx-menu{
     font-size: 30px;
     color: white;
     cursor: pointer;
-    display: flex;
-    float: right;
 }
 #my-projects h1{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #008abc;
     text-align: center;
+    text-decoration: underline;
 }
 .row-1{
     display: flex;
     margin: 30px;
     justify-content: center;
     gap: 40px;
-    width: 100%;
+    overflow: hidden;
+}
+.card h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #08ac99;
 }
 .card{
     text-align: center;
     width: 300px;
-    height: 350px;
+    height: auto;
     padding: 20px;
     border: none;
     border-radius: 15px;
-    color:#fff;
-    font-weight: bold;
+    background-color: #000000;
+    position: relative;
 }
 .card:hover{
-    border: 3px solid #081b70;
-    transition: 0.3s ease-in-out;
+    transition: .5s ease;
+    box-shadow: 0 0 20px 5px #0cdbc3;
 }
-.card h3{
-    text-decoration: underline;
-    color: #0b4281;
+.card span{
+    color: white;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
 }
 
 footer{
@@ -201,15 +275,30 @@ footer{
 .bx-link-external{
     font-size: 30px;
     cursor: pointer;
+    color: aqua;
+    position: absolute;
+    bottom: 10px;
 }
 #contact{
-    padding: 20px;
-}
-#contact h1{
     text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
-#contact .bx{
-    font-size: 25px;
+
+#contact h1{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #008abc;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+#contact p{
+    background-color: #4dc7c3;
+    padding: 20px;
+    width: 700px;
+    
 }
 @media screen and (max-width: 539px){
     .nav-links{
@@ -227,18 +316,17 @@ footer{
     .my-image img{
         height: 200px;
     }
-    .card span{
-        font-size: 15px;
-    }
-    .card:hover{
-        border: 3px solid #081b70;
-    }
     .row-1{
         display: flex;
-        flex-direction: column;
         margin: 30px;
-        justify-content: center;
         gap: 40px;
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    #contact p{
+       
+        width: 400px;
+        
     }
 }
