@@ -80,10 +80,16 @@ span .bx-menu{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    position:relative
 }
 .content{
     align-content: center;
     margin-bottom: 70px;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    animation: movein 1s ease-in-out forwards;
+    transition: all 0.3s ease;
 }
 .content h1{
     font-family: var(--accent-font);
@@ -97,6 +103,16 @@ span .bx-menu{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     margin-bottom: 15px;
+   
+}
+@keyframes movein {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 150px;
+    }
+    
 }
 .hero-buttons{
     background-color: brown;
@@ -110,6 +126,7 @@ span .bx-menu{
 }
 .my-image img{
     height: 600px;
+    margin-left: 500px;
 }
 #aboutme{
     text-align: center;
@@ -328,5 +345,12 @@ footer{
        
         width: 400px;
         
+    }
+    #aboutme .me::before {
+       display: none;
+    }
+    
+    #aboutme .me::after {
+        display: none;
     }
 }

@@ -8,6 +8,8 @@ const burDisapear = document.querySelector(".bx-x");
 experienceInfo.style.display = "none";
 educationInfo.style.display = "none";
 
+
+
 aboutLinks.forEach((aboutLinks) => {
     aboutLinks.addEventListener("click", () =>{
         let value = aboutLinks.textContent;
@@ -57,3 +59,4 @@ burDisapear.addEventListener("click", function() {
     document.querySelector(".bur-menu").style.display = "none";
      burgerMenu.style.display = "block";
 })
+
